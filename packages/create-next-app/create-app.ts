@@ -32,6 +32,10 @@ export async function createApp({
 }) {
   let repoInfo: RepoInfo | undefined
 
+  if (example === 'default') {
+    example = undefined
+  }
+
   if (example) {
     let repoUrl: URL | undefined
 
